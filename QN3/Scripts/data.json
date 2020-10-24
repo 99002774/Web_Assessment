@@ -1,0 +1,37 @@
+[
+  {
+    "userId": 201,
+    "userName": "Mike",
+    "userPhone": "9994034588",
+    "userEmail": "mike@gmail.com",
+    "userCity": "Blore"
+  },
+  {
+    "userId": 202,
+    "userName": "Suresh",
+    "userPhone": "8940034003",
+    "userEmail": "suresh22@gmail.com",
+    "userCity": "Chn"
+  },
+  {
+    "userId": 203,
+    "userName": "Lionel",
+    "userPhone": "9894340631",
+    "userEmail": "leo10@gmail.com",
+    "userCity": "Mdu"
+  },
+  {
+    "userId": "",
+    "userName": "",
+    "userPhone": "",
+    "userEmail": "",
+    "userCity": ""
+  },
+  {
+    "userId": "222",
+    "userName": "shariq",
+    "userPhone": "373932",
+    "userEmail": "ssss@gmail.com",
+    "userCity": "mys"
+  }
+]

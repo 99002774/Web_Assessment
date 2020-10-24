@@ -1,0 +1,58 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+    <script src="../Scripts/Classes.js"></script>
+    <script src="../Scripts/Common.js"></script>
+    <script>
+        function store(){
+            alert('User Successfully Registered');
+            let name = $("userName").value;
+            let dob = $("dob").value;
+            let status = $("status").value;
+            let qual = $("userQual").value;
+            let userObj = new user(name, dob, status, qual);
+            let text = `<p>Name: ${userObj.name} </p><p>DOB: ${userObj.dob} </p><p>Mode: ${userObj.status} </p><p>Post: ${userObj.qual} </p>`
+            $("printHere").innerHTML = text;
+        }
+    </script>
+     <style>
+        body{
+                background-color: cornsilk;
+                color: chocolate;
+            }
+        h1{
+                text-align: center;
+                border: 2px solid blue;
+                padding: 10px;
+                margin: 30px;
+            
+            }
+    </style>
+    <h1>Recruitment Form</h1>
+</head>
+<body>
+    <section>
+        <form>
+            <p>ENTER YOUR NAME : <input type="text" placeholder="Enter the Name" id="userName"></p>    
+            <p>ENTER DATE : <input type="date" id="dob" name="dob">
+            <p>
+                MODE OF APPOINTMENT : <input type="radio" id="status" value="Single" name="status1">Online<input type="radio" id="status" value="Married" name="status2">Offline
+            </p>        
+            <p>POST : <select id="userQual">
+                <option>---select one---</option>
+                <option>Analyst</option>
+                <option>Developer</option>
+                <option>Tester</option>
+            </select></p>
+            <button type="button" onclick=store()>SUBMIT</button>
+        </form>
+    </section>
+    <br>   
+    <div>
+        <p>The User Details:</p>
+        <p id="printHere"></p>
+    </div>
+</body>
+</html>
